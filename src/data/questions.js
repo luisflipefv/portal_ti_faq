@@ -12,7 +12,8 @@ export const questions = [
   {
     id: 3,
     question: "Recebi uma máquina nova e não sei o que fazer",
-  answer: "Antes de trazer para o laboratório, certifique-se de que a etiqueta de patrimônio já está colada no equipamento, o pacote Office já foi providenciado e que o usuário que irá usar a máquina já possui uma conta criada."
+    answer: "Antes de trazer para o laboratório, certifique-se de que a etiqueta de patrimônio já está colada no equipamento, o pacote Office já foi providenciado e que o usuário que irá usar a máquina já possui uma conta criada.",
+    tip: "Caminho no portal: Suporte > Novas Máquinas > Checklist de Configuração"
   },
   {
     id: 4,
