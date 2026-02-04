@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  /* Isso cria a animação que você quer no acordeão */
+  @keyframes fade-in-down {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  --animate-fade-in-down: fade-in-down 0.3s ease-out;
+
+  /* Forçando as cores para garantir que o Docker as reconheça */
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --color-gray-100: #f3f4f6;
+  --color-gray-700: #374151;
+}
