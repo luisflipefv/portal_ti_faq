@@ -41,7 +41,7 @@ function App() {
 
         <footer className="mt-10 text-center">
           <p className="text-sm text-gray-500 mb-4">Não encontrou o que precisava?</p>
-          <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors font-medium">
+          <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors font-medium" onClick={() => window.open('https://www.aguiabranca.com.br/telefones', '_blank')}>
             Abrir Chamado Agora
           </button>
         </footer>
