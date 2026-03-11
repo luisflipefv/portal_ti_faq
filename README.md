@@ -1,16 +1,51 @@
-# React + Vite
+# Portal de Apoio ao Usuário (Portal de Ajuda)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto simples para um Portal de FAQ (Perguntas Frequentes), desenvolvido com **React**, **Vite** e **TailwindCSS**. O objetivo desta aplicação é ajudar os usuários a encontrarem soluções rápidas para problemas comuns do dia a dia antes de precisarem abrir um chamado no suporte (SOS Águia Branca).
 
-Currently, two official plugins are available:
+## Recursos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Busca Rápida**: Barra de pesquisa para filtrar perguntas e respostas instantaneamente.
+- **Acordeão de Dúvidas**: As dúvidas são organizadas em um formato de acordeão, expandindo para mostrar a resposta, dicas adicionais e um botão direto para abrir um chamado.
+- **Design Responsivo**: O layout do portal é adaptável para diferentes tamanhos de tela.
+- **Interface Amigável**: Utilização de TailwindCSS para um visual limpo e moderno.
 
-## React Compiler
+## Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19**
+- **Vite**
+- **TailwindCSS 4**
+- **JavaScript (ESModules)**
 
-## Expanding the ESLint configuration
+## Como Executar o Projeto Localmente
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Instale as dependências**:
+   ```bash
+   npm install
+   ```
+
+2. **Inicie o servidor de desenvolvimento**:
+   ```bash
+   npm run dev
+   ```
+
+3. Acesse a aplicação no seu navegador pelo endereço fornecido no terminal (geralmente `http://localhost:5173/`).
+
+## Como Fazer o Build para Produção
+
+Para gerar os arquivos otimizados para produção, execute o seguinte comando:
+
+```bash
+npm run build
+```
+Os arquivos prontos para deploy estarão na pasta `dist/`. Para visualizar o build de produção localmente, utilize:
+
+```bash
+npm run preview
+```
+
+## Estrutura de Arquivos Principal
+
+- `src/App.jsx`: Componente principal que gerencia o estado de busca e renderiza o layout.
+- `src/components/FaqItem.jsx`: Componente de acordeão responsável por exibir cada dúvida suportando informações de resposta, dicas e abertura de chamado.
+- `src/data/questions.js`: Objeto contendo todas as perguntas configuradas.
+- `src/index.css`: Importação do TailwindCSS e estilos globais estáticos.
